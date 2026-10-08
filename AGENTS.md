@@ -37,14 +37,14 @@ Every model response is strict JSON validated before use. Retry invalid output o
 
 ## Rules
 
-| File | Applies | Purpose |
-|---|---|---|
-| `00-user-context.mdc` | always | owner preferences, public context, hard privacy boundary |
-| `10-project-conventions.mdc` | always | stack, layout, IndexedDB, strict TS, tests, scripts |
-| `20-prompts-ethics.mdc` | agent/modes/content | prompt safety, consent, JSON schemas, explicit communication |
-| `25-ta-content.mdc` | agent/modes/content | accurate, tentative, ethical TA terminology |
-| `30-design-system.mdc` | UI/CSS/HTML | dark calm green/purple system, accessibility, responsive behavior |
-| `40-security-secrets.mdc` | always | local data, keys, exports, provider errors, CSP |
+| File                         | Applies             | Purpose                                                           |
+| ---------------------------- | ------------------- | ----------------------------------------------------------------- |
+| `00-user-context.mdc`        | always              | owner preferences, public context, hard privacy boundary          |
+| `10-project-conventions.mdc` | always              | stack, layout, IndexedDB, strict TS, tests, scripts               |
+| `20-prompts-ethics.mdc`      | agent/modes/content | prompt safety, consent, JSON schemas, explicit communication      |
+| `25-ta-content.mdc`          | agent/modes/content | accurate, tentative, ethical TA terminology                       |
+| `30-design-system.mdc`       | UI/CSS/HTML         | dark calm green/purple system, accessibility, responsive behavior |
+| `40-security-secrets.mdc`    | always              | local data, keys, exports, provider errors, CSP                   |
 
 ## Design
 

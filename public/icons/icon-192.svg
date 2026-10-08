@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="Social Agents">
+  <rect width="192" height="192" rx="38" fill="#161820"/>
+  <path d="M48 57h96v58H91l-27 22v-22H48z" fill="none" stroke="#3ddc97" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="75" cy="86" r="7" fill="#a78bfa"/>
+  <circle cx="96" cy="86" r="7" fill="#a78bfa"/>
+  <circle cx="117" cy="86" r="7" fill="#a78bfa"/>
+</svg>
