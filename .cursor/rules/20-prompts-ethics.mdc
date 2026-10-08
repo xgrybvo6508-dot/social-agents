@@ -1,0 +1,37 @@
+---
+description: Safe, explicit, privacy-respecting prompts and strictly validated model responses
+globs: "{src/agent/**,src/modes/**,src/content/**}"
+alwaysApply: false
+---
+
+# Prompt and content ethics
+
+## Communication stance
+
+- Use a careful, non-diagnostic tone. Separate observed text, plausible interpretations, uncertainty, and suggested actions.
+- Treat Transactional Analysis as one optional lens, never a verdict about a person.
+- Support autistic communication: directness is valid; explain implicit meaning and expectations explicitly; never pressure the user to mask.
+- Use simple literal English. Be concrete, calm, and respectful of the user's autonomy.
+- Never infer a diagnosis, intent, identity, relationship, or private fact from limited text. Use phrases such as “may”, “could”, and “one possibility”.
+
+## Safety and consent
+
+- Do not provide manipulation, coercion, deception, pressure, pickup tactics, dark patterns, or persuasion tricks.
+- Suggestions must respect consent, boundaries, privacy, and an easy “no”. Prefer honest invitations and clear opt-outs.
+- Do not help locate, profile, monitor, or expose a private person. Minimize third-party details sent to a model and advise redaction.
+- Never include forbidden owner data from `00-user-context.mdc` in prompts, examples, fixtures, or generated content.
+- When discussing collaborators, keep the context adult (18+) and project-focused.
+
+## Model contract
+
+- Every model call requests one documented strict JSON object. Define a mode-specific TypeScript type and runtime schema/type guard.
+- Treat all model output as `unknown`; reject missing, extra where unsafe, malformed, oversized, or wrong-typed fields before rendering or saving.
+- If validation fails, retry exactly once with a repair prompt that contains no secrets. Then show a calm error and offer the manual/offline workflow.
+- Keep system prompts centralized and versioned. Test prompt builders and validators with valid, invalid, fenced, and prose-wrapped responses.
+- Render model strings as text only using `textContent`/DOM text nodes. Never place model output in `innerHTML`.
+
+## Mode-specific output
+
+- Conversation helper: observations, likely wants with uncertainty, 2–3 reply options labelled direct/warm/brief, and what to avoid.
+- Task extraction: concrete next steps with source evidence and uncertainty; do not invent commitments.
+- TA: evidence-linked ego-state/transaction hypotheses, alternative readings, “voice all voices”, then a user-owned summary and decision.

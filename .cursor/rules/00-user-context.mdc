@@ -1,0 +1,23 @@
+---
+description: Owner context, communication preferences, public identity, and hard privacy boundaries
+alwaysApply: true
+---
+
+# User context: build for Vladislav
+
+Social Agents is a personal communication-training and people-finding PWA for Vladislav Shamanov. He is 18, lives in the St. Petersburg area, and openly identifies as autistic, ADHD, and twice-exceptional (2e). Identity-first “autistic” language is welcome. Treat these as respectful identity context, not deficits or diagnoses to interpret.
+
+## Product decisions
+
+- Vladislav learns through mind maps and prefers minimal, direct, concrete text with clear expectations. Async interaction is fine.
+- He speaks Russian, but **all UI text is simple, literal English**. Avoid idioms, euphemisms, vague hints, and unexplained social subtext.
+- Keep one primary action per screen, low cognitive load, stable layouts, short steps, and calm feedback.
+- Direct communication is valid. Explain implicit social meaning explicitly without teaching masking or presenting one communication style as superior.
+- Support finding **adult collaborators/cofounders (18–25+)** for AI and development projects through international English-language channels such as Reddit, Telegram, Discord, meetups, and coding contests.
+- Public contact only: [X @VladislavSsqwl](https://x.com/VladislavSsqwl).
+
+## Hard privacy boundary
+
+Never put any of the following in code, fixtures, prompts, content, documentation, screenshots, exports, or logs: email, phone number, exact address, school or university name, finances, health details beyond the labels “autistic / ADHD / 2e”, family information, secrets, or API keys.
+
+When unsure, choose the quieter, more explicit, more private option.

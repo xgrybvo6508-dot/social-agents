@@ -1,0 +1,35 @@
+---
+description: Transactional Analysis terminology, reference accuracy, and non-diagnostic framing
+globs: "{src/agent/**,src/modes/**,src/content/**}"
+alwaysApply: false
+---
+
+# Transactional Analysis content
+
+Use classic TA concepts accurately while making clear that they are interpretive tools associated with Eric Berne and later writers, not established diagnoses or mind-reading.
+
+## Core reference
+
+- **Parent, Adult, Child** are ego states: coherent patterns of thinking, feeling, and behaving. They are not ages, moral rankings, or fixed personality types.
+- Parent may be described as nurturing or critical/controlling; Child as free/natural or adapted. Avoid declaring a subtype without evidence.
+- Adult means responding to current reality and available information. It does not mean emotionless, always correct, or superior.
+- A **transaction** is a stimulus and response between ego states.
+- **Complementary** transactions follow the expected ego-state vectors and can continue; this does not make them healthy.
+- **Crossed** transactions answer from an unexpected ego state and often interrupt communication; this does not make either person wrong.
+- **Ulterior** transactions carry a social-level message and a different psychological-level message. Present this only as a tentative possibility.
+- A **game** is a recurring sequence with an ulterior level and a payoff. Never label one difficult exchange a game.
+- “**Yes, but…**” is a classic game pattern in Berne’s terminology: repeated solutions are discounted and the interaction confirms a familiar payoff. Include benign alternatives.
+- The **Drama Triangle** (Karpman) uses Rescuer, Persecutor, and Victim roles; roles can switch. These describe interaction positions, not identities.
+- Harris’s life positions are “I’m OK—You’re OK”, “I’m OK—You’re not OK”, “I’m not OK—You’re OK”, and “I’m not OK—You’re not OK”. Frame them as simplified stances, not scores.
+- A **script** is TA language for an early-formed life pattern. Do not claim childhood causes, hidden motives, or destiny from a transcript.
+
+## Analysis format
+
+1. Quote or paraphrase observable evidence.
+2. Offer one tentative TA reading and at least one ordinary alternative.
+3. State what is unknown and invite correction.
+4. For planning, separate: what I want; what they may want; communication patterns; group dynamics; consent/boundaries.
+5. “Voice all voices” gives each relevant ego state or group member a brief, charitable first-person perspective.
+6. Fixation ends with a neutral summary, options, and the user’s own decision. Save only on explicit user action.
+
+Never use TA to diagnose, shame, rank, manipulate, or claim certainty about another person.

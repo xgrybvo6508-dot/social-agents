@@ -1,0 +1,49 @@
+---
+description: Dark, calm green/purple design system with accessible, ADHD-friendly interaction
+globs: "{src/ui/**,src/**/*.css,index.html}"
+alwaysApply: false
+---
+
+# Design system
+
+Match the sibling app visually, while fitting communication workflows.
+
+## Tokens
+
+Define CSS custom properties once in `src/ui/tokens.css`; do not hard-code colors elsewhere:
+
+```css
+:root {
+  color-scheme: dark;
+  --bg: #0e0f13; --surface: #161820; --surface-2: #1d2029;
+  --border: #2a2e3a; --text: #e7e9ee; --muted: #9aa0ad;
+  --green: #3ddc97; --green-soft: rgb(61 220 151 / 0.12);
+  --purple: #a78bfa; --purple-soft: rgb(167 139 250 / 0.12);
+  --warn: #f5b971; --on-accent: #0e0f13;
+  --radius: 12px; --radius-lg: 16px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+```
+
+Green means user primary action, progress, and success. Purple means AI-generated content, agent status, and interpretation. Never swap or mix these meanings. Use at most one filled accent button per screen.
+
+## Layout and type
+
+- Mobile-first single centered column, `max-width: 720px`; no workflow sidebars.
+- Show one step and one primary action at a time. Reveal complex worksheets progressively while keeping previous entries available.
+- Base 17px, line-height 1.6, readable width at most 68ch; scale 14/17/20/26/32px; weights 400/600.
+- Use sentence case, simple literal English, system fonts, generous spacing, and predictable control positions.
+
+## Accessibility and motion
+
+- WCAG AA: normal text contrast at least 4.5:1 and UI/large text at least 3:1.
+- Semantic HTML, explicit labels, logical heading order, keyboard operation, and `aria-live="polite"` for feedback.
+- Visible 2px green focus rings (purple inside AI panels); touch targets at least 44×44px; inputs at least 16px.
+- Motion is optional opacity/transform only, 150–200ms ease-out. No flashing, looping, shaking, parallax, confetti, countdown pressure, or auto-advance.
+- Disable transitions and animations under `prefers-reduced-motion: reduce`.
+- Respect safe-area insets. Test at 375px, 768/1024px, and 1440px.
+
+No third-party fonts, CDNs, trackers, or remote UI assets.

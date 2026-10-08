@@ -1,0 +1,44 @@
+---
+description: Social Agents stack, architecture, data model, strict TypeScript, testing, and completion checks
+alwaysApply: true
+---
+
+# Project conventions
+
+## Stack and deployment
+
+- Vite + vanilla strict TypeScript. No UI framework or heavy component library.
+- Static installable PWA deployed to `xgrybvo6508-dot/social-agents` on GitHub Pages.
+- Vite `base` is `/social-agents/`. Use `import.meta.env.BASE_URL` for asset and navigation paths.
+- Bundle everything locally. No third-party fonts, CDNs, trackers, analytics, or runtime dependencies on a server.
+- Tooling: Vitest, ESLint with typescript-eslint, and Prettier.
+
+## Layout
+
+```text
+src/
+  main.ts     # bootstrap only
+  agent/      # provider settings, API client, prompts, schemas, validation
+  memory/     # IndexedDB, migrations, import/export, phrase SRS
+  modes/      # phrase prep/training, helper, task extraction, TA workflows
+  content/    # starter phrases, TA cards, manual worksheets
+  ui/         # semantic views, components, CSS, accessibility
+  lib/        # small pure helpers, Result/types/guards
+```
+
+Tests are colocated as `*.test.ts`.
+
+## Engineering rules
+
+- Enable `strict`, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`, and `noImplicitOverride`. Never use `any`; validate `unknown` at boundaries.
+- Prefer named exports, small pure modules, dependency injection for fetch/storage/time, and one responsibility per file (roughly under 200 lines).
+- Keep DOM and persistence out of core logic. Use typed errors and calm, actionable UI messages.
+- Memory lives in versioned IndexedDB stores for people, groups, roles, phrases, sessions, and saved tasks/fixations. Migrate without silently losing data.
+- Settings alone use localStorage key `sa:settings`. JSON export/import includes memory, never settings or keys.
+- Without an API key, every mode still has a guided manual worksheet; starter phrases, TA cards, and phrase training work offline.
+
+## Required scripts and checks
+
+Keep `dev`, `build`, `preview`, `test`, `lint`, `typecheck`, and `format`. `build` must typecheck before Vite builds.
+
+Before completion run: `npm run typecheck && npm run lint && npm test && npm run build`.
